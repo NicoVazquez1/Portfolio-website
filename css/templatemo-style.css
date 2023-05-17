@@ -16,6 +16,7 @@ body {
     font-weight: 300;
     color: white;
     line-height: 1.5;
+    
 }
 
 a {
@@ -669,3 +670,25 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 /* JavaScript Turned Off */
 .no-js #loader-wrapper { display: none; }
 /*============ Preloader ends ==================================*/
+
+[data-content] {
+    display: none;
+}
+
+.active[data-content] {
+    display: block;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.social-icons a:hover {
+    color: #99FF66;
+}
+
+.footer {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+}

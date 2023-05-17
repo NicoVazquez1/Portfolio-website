@@ -14,15 +14,48 @@
 
 <body>
 
-  <div id="navbar-placeholder"></div>
-
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      });
-  </script>
+  <nav class="navba navbar-expand-md">
+    <video autoplay muted loop id="bg-video">
+      <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="#"><strong>Welcome to my Website!</strong> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-supported-content">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item selected">
+                      <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
+                      <div class="circle"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#0" data-no="2">Portfolio</a>
+                      <div class="circle"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#0" data-no="3">Educational</a>
+                      <div class="circle"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#0" data-no="4">Contact</a>
+                      <div class="circle"></div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
 
   <div class="container-fluid tm-content-container">
     <ul class="cd-hero-slider mb-0 py-5">
@@ -61,25 +94,38 @@
           <div class="circle intro-circle-1"></div>
           <div class="circle intro-circle-2"></div>
           <div class="mx-auto tm-border-top gallery-slider">
-            <figure class="effect-julia item">
+
+            <figure class="effect-julia item active" data-target="#agrolo">
+              <img src="img/agroloportada.png" alt="Image">
+              <figcaption>
+                <div>
+                  <p>Agrolo - Mobile app for optimazing the harvering data collector process</p>
+                </div>
+                <a class="nav-link" href="#">View more</a>
+              </figcaption>
+            </figure>
+
+            <figure class="effect-julia item" data-target="#automation">
               <img src="img/gallery-img-01.jpg" alt="Image">
               <figcaption>
                 <div>
-                  <p>Agrolo</p>
+                  <p>Framework Automation in Selenium</p>
                 </div>
                 <a href="#">View more</a>
               </figcaption>
             </figure>
-            <figure class="effect-julia item">
+
+            <figure class="effect-julia item" data-target="#cannon">
               <img src="img/gallery-img-02.jpg" alt="Image">
               <figcaption>
                 <div>
                   <p>Cannon</p>
                 </div>
-                <a href="#">View more</a>
+                <a class="nav-link ">View more</a>
               </figcaption>
             </figure>
-            <figure class="effect-julia item">
+
+            <figure class="effect-julia item" data-target="#sector7g">
               <img src="img/gallery-img-03.jpg" alt="Image">
               <figcaption>
                 <div>
@@ -88,115 +134,57 @@
                 <a href="#">View more</a>
               </figcaption>
             </figure>
-            <figure class="effect-julia item">
+
+            <figure class="effect-julia item" data-target="#others">
               <img src="img/gallery-img-04.jpg" alt="Image">
               <figcaption>
                 <div>
-                  <p>Framework Automation in Selenium</p>
+                  <p>Others</p>
                 </div>
                 <a href="#">View more</a>
               </figcaption>
             </figure>
-            <figure class="effect-julia item">
-              <img src="img/gallery-img-05.jpg" alt="Image">
-              <figcaption>
-                <div>
-                  <p>Attica</p>
-                </div>
-                <a href="#">View more</a>
-              </figcaption>
-            </figure>
-            <figure class="effect-julia item">
-              <img src="img/gallery-img-06.jpg" alt="Image">
-              <figcaption>
-                <div>
-                  <p>Acuarium</p>
-                </div>
-                <a href="#">View more</a>
-              </figcaption>
-            </figure>
-            <figure class="effect-julia item">
-              <img src="img/gallery-img-07.jpg" alt="Image">
-              <figcaption>
-                <div>
-                  <p>PubliEdicto</p>
-                </div>
-                <a href="#">View more</a>
-              </figcaption>
-            </figure>
-            <figure class="effect-julia item">
-              <img src="img/gallery-img-08.jpg" alt="Image">
-              <figcaption>
-                <div>
-                  <p>GasistaVazquez.online</p>
-                </div>
-                <a href="#">View more</a>
-              </figcaption>
-            </figure>
+
           </div>
 
-          <div class="mx-auto mt-5 ">
+          <div class="mx-auto mt-5 active tm-bg-dark content-pad" data-content id="agrolo">
             <div>
-              <h2>Agrolo - Optimizing the Fruit Harvesting Process</h2>
-          
-              <p>Note: Normally, I program in English, but I also wanted to teach others who don't speak English,
-                which is why
-                I chose
-                the Spanish language for this project.</p>
-              <p>Let's talk about something useful. This project aims to streamline the process of recording fruit
-                weight, revenue
-                generated, worker payments, tray quantity, client information, and delivery type in a blueberry field.
-                I myself
-                worked in such a field a few years ago and witnessed firsthand how slow the process was and how it
-                could be
-                improved
-                with this app. So, I proposed the idea to the field owner, and he liked it. That's when I created the
-                design:
+            <h3>Agrolo</h3>
+            <p>
+              This project aims to streamline the process of recording fruit weight, revenue generated, worker payments, tray
+              quantity, client information, and delivery type in a blueberry field. I myself worked in such a field a few years ago
+              and witnessed firsthand how slow the process was and how it could be improved.
+            </p>
+            <p>
+              So, the way it worked was as follows: every 2 hours, a truck would enter the field ready to be filled with the fruit.
+              The workers would approach the truck one by one and submit their trays filled with fruit for weighing. The data would
+              be recorded on paper, and at the end of the working day, all the calculations would be done to determine the payments
+              for each worker, the total amount of fruit collected, and the generated revenue.
+            </p>
+            <p>
+              Understanding this, the idea of creating an app came to mind. With the app, all the data could be recorded and
+              automatically processed, eliminating the need for manual calculations.
+            </p>
+            <p>
+              I proposed this idea to the field owner, and he liked it. Here is the design:
+            </p>
+              <img src="img/agrolodiseño.png" alt="App Design" width="500px">
+            </div>
+
+            <div class="container-fluid">
+              <br>
+              <p>I also created the entity-relationship, in this, one worker or 'trabajadores' can have multiples 'entregas', and 'entregas' can have only one 'despacho' or truck, etc... 
               </p>
+              <img src="path/to/entity_relationship_diagram.jpg" alt="Entity-Relationship Diagram" width="500px">
             </div>
-          
+
             <div class="container-fluid">
-              <img src="path/to/design_photo.jpg" alt="App Design">
-          
-              <p>Working with WordPress helped me improve my design skills. I also created the entity-relationship
-                diagram:
-              </p>
-            </div>
-          
-            <div class="container-fluid">
-              <img src="path/to/entity_relationship_diagram.jpg" alt="Entity-Relationship Diagram">
-          
-              <p>Next, I built the database:</p>
-            </div>
-          
-            <div class="container-fluid">
-              <img src="path/to/entity_relationship_diagram.jpg" alt="Entity-Relationship Diagram">
-          
-              <p>Next, I built the database:</p>
-            </div>
-          
-            <div class="container-fluid">
-              <img src="path/to/database_photo.jpg" alt="Database">
-          
-              <p>I developed user stories:</p>
-            </div>
-          
-            <div class="container-fluid">
+              <p>Then I created the users stories describing the problems to be solved and the budget estimating the amount of hours of work</p>
               <img src="path/to/user_stories_photo.jpg" alt="User Stories">
-          
-              <p>I based my architecture on MVC:</p>
             </div>
-          
-            <div class="container-fluid">
-              <img src="path/to/user_stories_photo.jpg" alt="User Stories">
-          
-              <p>I based my architecture on MVC:</p>
-            </div>
-          
+
             <div class="container-fluid">
               <p>I based my architecture on MVC:</p>
-          
-              <img src="path/to/mvc_folders_photo.jpg" alt="MVC Folders">
             </div>
 
             <div class="container-fluid">
@@ -211,26 +199,10 @@
                 for a business operation, I handle it through the NegocioService class, which contains all the
                 business
                 logic.</p>
-          
+
               <p>Finally, I conducted tests using Postman:</p>
             </div>
 
-            <div class="container-fluid">
-              <p>The next step was creating the connection. For that, I used Entity Framework, and to be honest, I
-                thought it
-                would be
-                more difficult. Then, I implemented security by creating the JWT and making the necessary
-                configurations.
-                Afterwards, I created the endpoints, connected to the database in the services folder, and whenever
-                there's
-                a need
-                for a business operation, I handle it through the NegocioService class, which contains all the
-                business
-                logic.</p>
-          
-              <p>Finally, I conducted tests using Postman:</p>
-            </div>
-          
             <div class="container-fluid">
               <video src="path/to/postman_video.mp4" controls></video>
               <p>Currently, the project is running smoothly on the server. For the interface, I'm going to train
@@ -246,6 +218,96 @@
 
           </div>
 
+          <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="cannon">
+            <h3>Creating a 3D videogame in Unity</h3>
+            <p>I created this video game to put my programming and Unity skills into practice.</p>
+            <p><strong>Cannon</strong> is a 3D game where you shoot barrels that appear on the screen using your cannon.
+              In the game
+              mechanics, you can switch between three types of ammunition:</p>
+            <p><strong>Long-range Shot:</strong> a single bullet ideal for precision. (Image: path-to-image)</p>
+            <p><strong>Rapid Shot:</strong> multiple bullets with dispersion, ideal for quickly hitting multiple nearby
+              targets.
+              (Image: path-to-image)</p>
+            <p><strong>Air Explosion:</strong> explosive ammunition ideal for hitting multiple targets with a single
+              blow.
+              (Image: path-to-image)</p>
+            <p>As time passes, the speed increases, and the barrels appear in different forms. To achieve this, I used
+              the strategy
+              pattern. (Code photo: path-to-image)</p>
+            <p>There are also barrels that provide coins for earning more points, ammunition, or power-ups. For this, I
+              used the
+              factory pattern. (Code photo: path-to-image)</p>
+            <p>There are also several optimization decisions, such as changing the cannon model to one with fewer
+              polygons, baking
+              shadows, and using the object pooling technique based on flyweight.</p>
+            <p>The game is available in itch.io and the source code is in my github</p>
+
+          </div>
+
+          <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="automation">
+            <h3>Automation framework.</h3>
+            <p>This is my Automation framework, written in C# and using selenium web driver and specflow framework, it has hooks
+              (which are process that are executed every time a test case, scenario or step begins or finish), reporting of the
+              amount of bugs and the state of the project.</p>
+             <p>
+              In the features folders we create our Gherkin files and then we use this option and  specflow automaticaly create the methods   
+             </p> 
+             <img src="img/AutomationStepDef.png" alt="">
+            <br>
+            <p>In this case I show how the framework works, first we go to youtube, click in the search bar and then we search for     Polyphia - Playing god (cover by me) which is, of course, the best cover of all youtube, here a photo of the code</p>
+
+            <p>And here is a video of how it is executed</p>
+
+            <p>It is avalilable in my github, here is the link: </p>
+          </div>
+
+          <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="sector7g">
+            <h3>Sector 7-G</h3>
+            <p>Sector 7-G is a video game that emerged from a game jam with the theme of "the calm before the storm." It
+              involves
+              taking on the role of a technician at a nuclear station and trying to prevent the reactor from exploding,
+              even though
+              the ending is inevitable (end screen note: this was my idea). It was developed in 3 days as the final
+              project for the
+              game art design course, in which I served as a tutor for composition and music production. However, upon
+              learning that
+              I could participate, I joined the group and programmed the button mini-game, as well as composed a small
+              jazz piece on
+              the piano. Additionally, I do not appear in the credits screen, but I am mentioned on the page.</p>
+
+            <p>As is often the case with such projects and due to the participants' inexperience, the game didn't come
+              out polished.
+              The button mini-game lacks proper feedback. Later on, I took the project and polished it myself, but my
+              version
+              doesn't include the music from the other team members. Nevertheless, it is more enjoyable, and I also
+              improved my jazz
+              piece.</p>
+          </div>
+
+          <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="others">
+            <h3>Various projects</h3>
+            <p>Now I am going to show many of the projects that I have work on but I ended up abandond them for one or other reason</p>
+            <h4>Attica</h4>
+            <p>Attica is a web project made in .Net and I was going to be a platform for users to present and vote for projects.</p>
+            <h4>Acuarium</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolore laudantium voluptatem neque ea est odio
+              aliquam quam autem velit, delectus, aspernatur exercitationem ratione dolorem quasi voluptate placeat, nostrum fuga
+              numquam similique blanditiis error quis. Doloremque distinctio repellat nemo voluptas provident quibusdam a quae sint.
+            </p>
+            <h4>PubliEdicto</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolore laudantium voluptatem neque ea est odio
+              aliquam quam autem velit, delectus, aspernatur exercitationem ratione dolorem quasi voluptate placeat, nostrum fuga
+              numquam similique blanditiis error quis. Doloremque distinctio repellat nemo voluptas provident quibusdam a quae sint.
+            </p>
+            <h4>Gasista Vazquez</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolore laudantium voluptatem neque ea est odio
+              aliquam quam autem velit, delectus, aspernatur exercitationem ratione dolorem quasi voluptate placeat, nostrum fuga
+              numquam similique blanditiis error quis. Doloremque distinctio repellat nemo voluptas provident quibusdam a quae sint.
+            </p>
+            <h4>Common anomalies</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda fugit molestias aspernatur sed, impedit eos hic repellendus, consectetur pariatur ratione ducimus suscipit praesentium quas minus ab ullam vitae omnis nulla dolorem ipsa! Blanditiis similique doloribus qui aperiam libero amet cupiditate sed ipsum maiores, laborum deserunt quaerat a, culpa expedita consequatur labore voluptatem laudantium voluptatum in! Tempora saepe exercitationem facilis rem!</p>
+          </div>
+
       </li>
 
       <li data-page-no="3" class="px-3">
@@ -258,15 +320,7 @@
             <h2 class="mb-4">Coming soon...</h2>
             <p class="mb-4">
             <p class="mb-4">
-              Exciting news! I'm currently working on launching my very own blog, where I'll be sharing insightful
-              articles,
-              tutorials, and industry updates. Stay tuned for engaging content on various topics related to .NET
-              development, SQL
-              Server, front-end frameworks, and much more. Whether you're a fellow developer or an enthusiast, my blog
-              will offer
-              valuable insights and practical tips to help you excel in the world of web development. Join me on this
-              journey as we
-              explore the ever-evolving technology landscape together!
+              This Section is about my videos explaining concept about programing
             </p>
             </p>
             <p class="mb-4">
@@ -329,25 +383,27 @@
 
     </ul>
 
+
   </div>
-  <div class="container-fluid">
-    <footer class="row mx-auto tm-footer">
-      <div class="col-md-6 px-0">
-        Copyright 2021 Astro Motion Company Limited. All rights reserved.
+
+  <footer class="footer">
+    <div class="row justify-content-end">
+      <div class="col-12 col-sm-6 col-md-4">
+        <ul class="list-inline social-icons fa-lg">
+          <li class="list-inline-item"><a href="https://github.com"><i class="fab fa-github"></i></a></li>
+          <li class="list-inline-item"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
       </div>
-      <div class="col-md-6 px-0 tm-footer-right">
-        Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank"
-          class="tm-link-white">TemplateMo</a>
-      </div>
-    </footer>
-  </div>
-  </div>
-  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+    </div>
+  </footer>
+
   <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
   </div>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.js"></script>

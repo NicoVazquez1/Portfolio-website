@@ -271,10 +271,14 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
 	height: auto;
-	background: #3085a3;
+	background: #2f3238;
 	text-align: center;
 	cursor: pointer;
     border-radius: 15px;
+}
+.gallery-slider figure:hover {
+    background: #5cac38;
+    transition: 500ms;
 }
 
 .gallery-slider figure img {
@@ -426,6 +430,7 @@ figure.effect-julia:hover img {
 }
 
 figure.effect-julia:hover p {
+   
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -711,4 +716,14 @@ img{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.project-section{
+    margin-top: 30px;
+}
+
+.button{
+    background-color: transparent;
+    color: white;
+    border: none;
 }

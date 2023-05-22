@@ -106,22 +106,22 @@
             </figure>
 
             <figure class="effect-julia item" data-target="#automation">
-              <img src="img/gallery-img-01.jpg" alt="Image">
+              <img src="img/gallery-img-02.jpg" alt="Image">
               <figcaption>
                 <div>
-                  <p>Framework Automation in Selenium</p>
+                  <p>FlowTest - An Automation test framework made with C#, Specflow and Selenium</p>
                 </div>
-                <a href="#">View more</a>
+                <a class="nav-link ">View more</a>
               </figcaption>
             </figure>
 
             <figure class="effect-julia item" data-target="#cannon">
-              <img src="img/gallery-img-02.jpg" alt="Image">
+              <img src="img/gallery-img-01.jpg" alt="Image">
               <figcaption>
                 <div>
-                  <p>Cannon</p>
+                  <p>Cannon - A 3D videogame made with in Unity with C# </p>
                 </div>
-                <a class="nav-link ">View more</a>
+                <a href="#">View more</a>
               </figcaption>
             </figure>
 
@@ -129,69 +129,72 @@
               <img src="img/gallery-img-03.jpg" alt="Image">
               <figcaption>
                 <div>
-                  <p>Sector 7-G</p>
+                  <p>Sector 7-G - A 2D videogame made with in Unity with C#</p>
                 </div>
                 <a href="#">View more</a>
               </figcaption>
             </figure>
-
             <figure class="effect-julia item" data-target="#others">
               <img src="img/gallery-img-04.jpg" alt="Image">
               <figcaption>
                 <div>
-                  <p>Others</p>
+                  <p>Others - various project made with different technologies</p>
                 </div>
                 <a href="#">View more</a>
               </figcaption>
             </figure>
-
           </div>
 
           <div class="mx-auto mt-5 active tm-bg-dark content-pad" data-content id="agrolo">
             <div>
-            <h3>Agrolo</h3>
-            <p>
-              This project aims to streamline the process of recording fruit weight, revenue generated, worker payments, tray
-              quantity, client information, and delivery type in a blueberry field. I myself worked in such a field a few years ago
-              and witnessed firsthand how slow the process was and how it could be improved.
-            </p>
-            <p>
-              So, the way it worked was as follows: every 2 hours, a truck would enter the field ready to be filled with the fruit.
-              The workers would approach the truck one by one and submit their trays filled with fruit for weighing. The data would
-              be recorded on paper, and at the end of the working day, all the calculations would be done to determine the payments
-              for each worker, the total amount of fruit collected, and the generated revenue.
-            </p>
-            <p>
-              Understanding this, the idea of creating an app came to mind. With the app, all the data could be recorded and
-              automatically processed, eliminating the need for manual calculations.
-            </p>
-            <p>
-              I proposed this idea to the field owner, and he liked it. Here is the design:
-            </p>
-              <img src="img/agrolodiseño.png" alt="App Design" width="500px">
+              <h3>Agrolo</h3>
+              <p><strong>Stack:</strong><img src="img/logos/CsLogo.jpeg" class="logos"> <img
+                  src="img/logos/MySqlLogo.jpeg" class="logos"> <img src="img/logos/dotnet.png" class="logos"> </p>
+              <p><strong>Skills:</strong> MVC arquitecture | Database and interface design | SOLID </p>
+              <p>
+                This project aims to streamline the process of recording fruit weight, revenue generated, worker
+                payments, tray
+                quantity, client information, and delivery type in a blueberry field. I myself worked in such a field a
+                few years ago
+                and witnessed firsthand how slow the process was and how it could be improved.
+              </p>
+              <p>
+                So, the way it worked was as follows: every 2 hours, a truck would enter the field ready to be filled
+                with the fruit.
+                The workers would approach the truck one by one and submit their trays filled with fruit for weighing.
+                The data would
+                be recorded on paper, and at the end of the working day, all the calculations would be done to determine
+                the payments
+                for each worker, the total amount of fruit collected, and the generated revenue.
+              </p>
+              <p>
+                Understanding this, the idea of creating an app came to mind. With the app, all the data could be
+                recorded and
+                automatically processed, eliminating the need for manual calculations.
+              </p>
+              <p>
+                I proposed this idea to the field owner, and he liked it. Here is the design:
+              </p>
+              <img src="img/agrolo/agrolodiseño.png" alt="App Design">
             </div>
 
             <div class="container-fluid">
               <br>
-              <p>I also created the entity-relationship, in this, one worker or 'trabajadores' can have multiples 'entregas', and 'entregas' can have only one 'despacho' or truck, etc... 
+              <p>I also created the entity-relationship, in this, one worker or 'trabajadores' can have multiples
+                'entregas', and 'entregas' can have only one 'despacho' or truck, etc...
               </p>
-              <img src="path/to/entity_relationship_diagram.jpg" alt="Entity-Relationship Diagram" width="500px">
+              <img src="img/agrolo/databaseModel.png" alt="Entity-Relationship Diagram">
             </div>
 
             <div class="container-fluid">
-              <p>Then I created the users stories describing the problems to be solved and the budget estimating the amount of hours of work</p>
-              <img src="path/to/user_stories_photo.jpg" alt="User Stories">
+              <p>Then I created the users stories describing the problems to be solved and the budget estimating the
+                amount of hours of work</p>
+              <img src="img/agrolo/agrolo-presupuesto.png" alt="User Stories">
             </div>
 
             <div class="container-fluid">
-              <p>I based my architecture on MVC:</p>
-            </div>
-
-            <div class="container-fluid">
-              <p>The next step was creating the connection. For that, I used Entity Framework, and to be honest, I
-                thought it
-                would be
-                more difficult. Then, I implemented security by creating the JWT and making the necessary
+              <p>The next step was creating the connection. For that, I used Entity Framework. Then,
+                I implemented security by creating the JWT and making the necessary
                 configurations.
                 Afterwards, I created the endpoints, connected to the database in the services folder, and whenever
                 there's
@@ -199,71 +202,98 @@
                 for a business operation, I handle it through the NegocioService class, which contains all the
                 business
                 logic.</p>
-
-              <p>Finally, I conducted tests using Postman:</p>
+              <img src="img/agrolo/negotioService.png" alt="">
             </div>
 
             <div class="container-fluid">
-              <video src="path/to/postman_video.mp4" controls></video>
+              <p>Finally, I conducted tests using Postman</p>
+              <p>In this first test a created a new truck which is ready to recive the fruit</p>
+              <img src="img/agrolo/agrolo-iniciarCamion.gif" class="gif">
+              <br>
+              <p>In this other test I created a delivery of fruit, asigning the workers ID, the amount of kilos and the
+                amount of trays
+              </p>
+              <img src="img/agrolo/agrolo-Entrega.gif" class="gif">
+              <p>And then, I deliver all the fruit load from the truck,
+              </p>
+              <img src="img/agrolo/agrolo-EntregaCamion.gif" class="gif">
+              <p>here's the database</p>
+              <img src="img/agrolo/dataBase.png" class="gif">
               <p>Currently, the project is running smoothly on the server. For the interface, I'm going to train
                 another
                 person in the
-                basics of programming to assist me in its development. Unfortunately, the project is on hold due to
-                financial issues
-                with the client. However, there is hope that the project will resume if the business model changes.
-                There is
-                a risk
-                involved, but I like taking risks.</p>
+                basics of programming to assist me in the development of the frontend interface. The project is still in
+                development due to financial reason with the client I am still waiting for the requirements, anyways the
+                project is going be complete </p>
             </div>
-
-          </div>
-
-          <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="cannon">
-            <h3>Creating a 3D videogame in Unity</h3>
-            <p>I created this video game to put my programming and Unity skills into practice.</p>
-            <p><strong>Cannon</strong> is a 3D game where you shoot barrels that appear on the screen using your cannon.
-              In the game
-              mechanics, you can switch between three types of ammunition:</p>
-            <p><strong>Long-range Shot:</strong> a single bullet ideal for precision. (Image: path-to-image)</p>
-            <p><strong>Rapid Shot:</strong> multiple bullets with dispersion, ideal for quickly hitting multiple nearby
-              targets.
-              (Image: path-to-image)</p>
-            <p><strong>Air Explosion:</strong> explosive ammunition ideal for hitting multiple targets with a single
-              blow.
-              (Image: path-to-image)</p>
-            <p>As time passes, the speed increases, and the barrels appear in different forms. To achieve this, I used
-              the strategy
-              pattern. (Code photo: path-to-image)</p>
-            <p>There are also barrels that provide coins for earning more points, ammunition, or power-ups. For this, I
-              used the
-              factory pattern. (Code photo: path-to-image)</p>
-            <p>There are also several optimization decisions, such as changing the cannon model to one with fewer
-              polygons, baking
-              shadows, and using the object pooling technique based on flyweight.</p>
-            <p>The game is available in itch.io and the source code is in my github</p>
-
           </div>
 
           <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="automation">
             <h3>Automation framework.</h3>
-            <p>This is my Automation framework, written in C# and using selenium web driver and specflow framework, it has hooks
-              (which are process that are executed every time a test case, scenario or step begins or finish), reporting of the
+            <p><strong>Stack: </strong><img src="img/logos/CsLogo.jpeg" alt="" class="logos"> <img src="img/logos/SeleniumLogo.jpeg" alt="" class="logos"> <img src="img/logos/SpecFlowLogo.png" alt="" class="logos"></p>
+            <p><strong>Skills: </strong>SOLID | Automation</p>
+            <p>This is my Automation framework, written in C# and using selenium web driver and specflow framework, it
+              has hooks
+              (which are process that are executed every time a test case, scenario or step begins or finish), reporting
+              of the
               amount of bugs and the state of the project.</p>
-             <p>
-              In the features folders we create our Gherkin files and then we use this option and  specflow automaticaly create the methods   
-             </p> 
-             <img src="img/AutomationStepDef.png" alt="">
+            <p>
+              In the features folders we create our Gherkin files and then we use this option and specflow automaticaly
+              create the methods
+            </p>
+            <img src="img/flowtest/AutomationStepDef.png" alt="">
             <br>
-            <p>In this case I show how the framework works, first we go to youtube, click in the search bar and then we search for     Polyphia - Playing god (cover by me) which is, of course, the best cover of all youtube, here a photo of the code</p>
-
-            <p>And here is a video of how it is executed</p>
-
+            <p>In this case first we go to youtube, and then we enter the query "playing god", as soon as the program enters the result page it clicks in the first result it show and then verify the that the title of the video is indeed the specify in the assert function</p>
+            <img src="img/flowtest/flowtest_Trim.gif" class="gif" alt="">
+            <p>Following that we </p>
             <p>It is avalilable in my github, here is the link: </p>
+            <a href="https://github.com/NicoVazquez1/FlowTest">FlowTest Code</a>
+          </div>
+
+          <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="cannon">
+            <h3>Cannon - A 3D shooter videogame</h3>
+            <p><strong>Stack: </strong> <img src="img/logos/unitywlgo.png" class="logos"> <img src="img/logos/CsLogo.jpeg" alt=""
+                class="logos"></p>
+            <p><strong>Skills: </strong>SOLID</p>
+            <p><strong>Cannon</strong> is a 3D game where you shoot barrels that appear on the screen using your cannon.
+              In the game</p>
+            <p>I created this video game to put my programming skills into practice and to learn Unity engine. a started
+              with an old version and I manage to make the cannon to shoot the targets with different types of ammo,
+              sounds and particle effect, but as the project start to grow it became kind of messy, so a started a new
+              version using some of the code used before, here is how the project look before
+            </p>
+            <img src="img/cannon/cannon-oldVersion.png" alt="">
+            <p>And this is the new version, as you can see, I also change the models so it can be more fluent and make
+              the terrain nicer</p>
+            <img src="img/cannon/cannonPortada.png" alt="">
+            <p>this is what I have done so far in 2 days. For now, I going to show the types of bullets the player can shoot, 
+              you can switch between three types of ammunition:</p>
+            <p><strong>Standar Bullet:</strong> a single bullet ideal for precision. </p>
+            <img src="img/cannon/cannon_normalBullet.gif" alt="" class="gif">
+            <p><strong>Shotgun Shot:</strong> multiple bullets with dispersion, ideal for quickly hitting multiple
+              nearby
+              targets.
+            </p>
+            <img src="img/cannon/cannon_shotgun.gif" alt="" class="gif">
+            <p><strong>Freeze Bullet:</strong> explosive ammunition ideal for hitting multiple targets with a single
+              blow.
+            </p>
+            <img src="img/cannon/cannon_freezeBullet.gif" alt="" class="gif">
+            <p>Next Steps: implement scoring system, HUD, Loot system depending of different barrel,
+              Improve the performance, Improve the gameplay, Fix bugs </p>
+            <p>Also, Here is the source code of the project, remember this project only have a couple hours of work so is in a very early phase of development</p>
+            <p></p>
+          
           </div>
 
           <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="sector7g">
             <h3>Sector 7-G</h3>
-            <p>Sector 7-G is a video game that emerged from a game jam with the theme of "the calm before the storm." It
+            <p><strong>Stack: </strong>C# | Unity</p>
+            <p><strong>Skills: </strong>SOLID</p>
+            <h3>Sector 7-G</h3>
+            <img src="img/sector7g/sector7g_cat.gif" alt="">
+            <p>
+              Sector 7-G is a video game that emerged from a game jam with the theme of "the calm before the storm." It
               involves
               taking on the role of a technician at a nuclear station and trying to prevent the reactor from exploding,
               even though
@@ -273,9 +303,12 @@
               learning that
               I could participate, I joined the group and programmed the button mini-game, as well as composed a small
               jazz piece on
-              the piano. Additionally, I do not appear in the credits screen, but I am mentioned on the page.</p>
-
-            <p>As is often the case with such projects and due to the participants' inexperience, the game didn't come
+              the piano. Additionally, I do not appear in the credits screen, but I am mentioned on the page on itch.io.
+            </p>
+            <p>This is the minigame I coded, basicly when you reproduce the right pattern it give 7 seconds more and a green text apprears, but if you fail then you keep running out of time </p>
+            <img src="img/sector7g/sector7g_trim.gif" class="gif" alt="">
+            <p>
+              As is often the case with such projects and due to the participants' inexperience, the game didn't come
               out polished.
               The button mini-game lacks proper feedback. Later on, I took the project and polished it myself, but my
               version
@@ -286,26 +319,38 @@
 
           <div class="mx-auto mt-5 tm-bg-dark content-pad" data-content id="others">
             <h3>Various projects</h3>
-            <p>Now I am going to show many of the projects that I have work on but I ended up abandond them for one or other reason</p>
+
+            <p>Now I am going to show many of the projects that I have work on but I ended up abandond them for one or
+              other reason</p>
             <h4>Attica</h4>
-            <p>Attica is a web project made in .Net and I was going to be a platform for users to present and vote for projects.</p>
+            <p><strong>Stack: </strong>C# | dotnet | Angular | Entity Framework</p>
+            <p>Attica is a web project made in .Net and Angular. I was going to be a platform for users to present projects and
+              vote for the one they like the most. I finish the database model, the CRUD functions on the API, and some of the functions basic functions on the front, here is a piture of how you whould add members to your organization</p>
+            <img src="img/others/attica.png" alt="">
             <h4>Acuarium</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolore laudantium voluptatem neque ea est odio
-              aliquam quam autem velit, delectus, aspernatur exercitationem ratione dolorem quasi voluptate placeat, nostrum fuga
-              numquam similique blanditiis error quis. Doloremque distinctio repellat nemo voluptas provident quibusdam a quae sint.
+            <p><strong>Stack: </strong>C# | Unity | Spectogram |</p>
+            <p>Acuarium is a Unity project in which a put a song of mine and then a serius of 3D objects appears
+              following the frequiensies of the music, meanwhile the player is in the middle of a "Acuarium" watching the music "flows"
             </p>
+            <img src="img/others/acuarium_trim.gif" class="gif" alt="">
             <h4>PubliEdicto</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolore laudantium voluptatem neque ea est odio
-              aliquam quam autem velit, delectus, aspernatur exercitationem ratione dolorem quasi voluptate placeat, nostrum fuga
-              numquam similique blanditiis error quis. Doloremque distinctio repellat nemo voluptas provident quibusdam a quae sint.
+            <p><strong>Stack: </strong>Java | String boot | MySql |</p>
+            <p>PubliEdicto was the final project of the Egg fullStack course it consist on the user uploading an edict
+              on the web so then it could be quoted and then published, the problem was that we did't have a good
+              teamwork, the project was completed by me and finish with it's basic function, after that we did't
+              continous the project
             </p>
-            <h4>Gasista Vazquez</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dolore laudantium voluptatem neque ea est odio
-              aliquam quam autem velit, delectus, aspernatur exercitationem ratione dolorem quasi voluptate placeat, nostrum fuga
-              numquam similique blanditiis error quis. Doloremque distinctio repellat nemo voluptas provident quibusdam a quae sint.
+            <img src="img/others/PubliEdicto.gif" class="gif" alt="">
+            <h4>gasistavazquez.online</h4>
+            <img src="img/others/GasistaVazquez.gif" class="gif" alt="">
+            <p><strong>Stack: </strong>HTML | CSS | Bootstrap | JavaScript | Google Ads</p>
+            <p>This was a landing page for the promotion of a gas engineer services, it reach first place for Mendoza center thanks to SEO work done by me, after some the project didn't work so it was drop 
             </p>
-            <h4>Common anomalies</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda fugit molestias aspernatur sed, impedit eos hic repellendus, consectetur pariatur ratione ducimus suscipit praesentium quas minus ab ullam vitae omnis nulla dolorem ipsa! Blanditiis similique doloribus qui aperiam libero amet cupiditate sed ipsum maiores, laborum deserunt quaerat a, culpa expedita consequatur labore voluptatem laudantium voluptatum in! Tempora saepe exercitationem facilis rem!</p>
+            <h4>Besares.shop</h4>
+            <img src="img/others/veterianariaBesares.png" alt="">
+            <p><strong>Stack: </strong>Wordpress | Google Ads</p>
+            <p>This was a website for the promotion of a veterinary, This is the was made with team of Forjadores.online, the SEO was not made by me, I made the landing page, login and register, as well as others configurations for the e-commerce 
+            </p>
           </div>
 
       </li>
@@ -387,15 +432,13 @@
   </div>
 
   <footer class="footer">
-    <div class="row justify-content-end">
       <div class="col-12 col-sm-6 col-md-4">
-        <ul class="list-inline social-icons fa-lg">
+        <ul class="m-3 list-inline social-icons fa-lg">
           <li class="list-inline-item"><a href="https://github.com"><i class="fab fa-github"></i></a></li>
           <li class="list-inline-item"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
           <li class="list-inline-item"><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
         </ul>
       </div>
-    </div>
   </footer>
 
   <div id="loader-wrapper">

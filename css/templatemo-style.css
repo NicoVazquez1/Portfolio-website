@@ -673,6 +673,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 
 [data-content] {
     display: none;
+    
 }
 
 .active[data-content] {
@@ -690,5 +691,24 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 .footer {
     padding: 20px 0;
     position: fixed;
+    width: 100%;
+}
+
+img{
+    width: 650px;
+}
+
+.gif{
+    width: 750px;
+}
+
+.logos{
+    width: 50px;
+}
+
+.footer {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }

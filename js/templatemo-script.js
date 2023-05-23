@@ -107,25 +107,7 @@ targets.forEach(target => {
 	})
 })
 
-// Initialize EmailJS with your user ID
-emailjs.init("YOUR_USER_ID");
 
-// Function to send the email
-function sendEmail(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-
-  // Get the form input values
-  var name = document.getElementById("name-input").value;
-  var email = document.getElementById("email-input").value;
-  var message = document.getElementById("message-input").value;
-
-  // Prepare the email parameters
-  var templateParams = {
-    from_name: name,
-    from_email: email,
-    message: message
-  };
-}
 /*
   // Initialize EmailJS with your user ID
 emailjs.init("YOUR_USER_ID");

@@ -124,11 +124,27 @@ function sendEmail(event) {
   emailjs.send(serviceId, templateId, templateParams)
     .then(response => {
       console.log("Email sent successfully:", response.status, response.text);
-      alert("Email sent successfully!");
+      alert("Thanks! Your email was sent successfully!")
     }, function(error) {
       console.log("Error sending email:", error);
-      alert("An error occurred while sending the email.");
+      alert("Error sending email.")
     })
 }
 
+/*
+function showModal(message) {
+  const modal = document.getElementById("modal");
+  const modalMessage = document.getElementById("modal-body");
+  modalMessage.textContent = message;
+  modal.style.display = "block";
+}
+
+// Close the modal when clicking outside of it
+window.addEventListener("click", function(event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+*/
 document.getElementById("contact-form").addEventListener("submit", sendEmail);

@@ -415,7 +415,6 @@ figure.effect-julia:hover p {
 
 /* Contact page */
 .tm-contact-left {
-    background-color: #333;
     padding-right: 55px;
 }
 
@@ -672,7 +671,8 @@ img{
 }
 
 .logos{
-    width: 50px;
+    width: 30px;
+    margin: 2px;
 }
 
 .footer {

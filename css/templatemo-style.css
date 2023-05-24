@@ -415,6 +415,7 @@ figure.effect-julia:hover p {
 
 /* Contact page */
 .tm-contact-left {
+    background-color: #333;
     padding-right: 55px;
 }
 

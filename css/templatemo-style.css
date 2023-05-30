@@ -206,11 +206,11 @@ h2 {
 }
 
 .card-bg-dark {
-    border-bottom: 4px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
     border-left: 5px solid #a8a8a8;
     border-top: 1px solid #a8a8a8;
-    border-right: 1px solid #a8a8a8;
-    border-radius: 10px;
+    padding: 12px;
+    border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -235,9 +235,9 @@ h2 {
 }
 
 .intro-left {
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 30px 40px;
-    max-width: 505px;    
+    max-width: 760px;    
 }
 
 .intro-img-1 {

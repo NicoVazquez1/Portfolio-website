@@ -1,12 +1,6 @@
-/*
-
-TemplateMo 560 Astro Motion
-
-https://templatemo.com/tm-560-astro-motion
-
-*/
-
 var gallery = undefined;
+
+//$('.carousel').carousel();
 
 function closeMenu() {
   $(".navbar-collapse").removeClass("show"); 
@@ -104,13 +98,14 @@ targets.forEach(target => {
 		})
 		const t = document.querySelector(target.dataset.target)
 		t.classList.add('active')
+    updateCarouselItems('.carousel-item');
 	})
 })
 
 emailjs.init("FMuwCahw7zsmib5XD");
 
 function sendEmail(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
+  event.preventDefault();
 
   var templateParams = {
     name: document.getElementById("name").value,
@@ -147,4 +142,26 @@ window.addEventListener("click", function(event) {
   }
 });
 */
+
 document.getElementById("contact-form").addEventListener("submit", sendEmail);
+
+function updateCarouselItems(className) {
+  const carouselItems = $(className);
+
+  carouselItems.each(function() {
+    const currentItem = $(this);
+    currentItem.removeClass('active');
+    
+    if ($('.content-pad').hasClass('active')) {
+      const carouselInner = $('.content-pad.active').find('.carousel-inner');
+      const firstCarouselItem = carouselInner.children('.carousel-item').first();
+      firstCarouselItem.addClass('active');
+    }
+  });
+}
+
+
+
+
+
+

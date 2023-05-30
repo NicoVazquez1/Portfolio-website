@@ -160,6 +160,11 @@ function updateCarouselItems(className) {
   });
 }
 
+$(document).ready(function() {
+  $('.enlargeable').click(function() {
+    $(this).toggleClass('enlarged');
+  });
+});
 
 
 

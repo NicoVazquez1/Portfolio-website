@@ -746,8 +746,20 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
     border: 0;
 }
 
+.carousel-inner .enlargeable {
+    cursor: pointer;
+}
 
-
+.carousel-inner .enlarged {
+    max-width: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 .slider {

@@ -121,6 +121,10 @@ h2 {
 .tm-border-bottom {
     border-bottom: 1px solid white;
     padding-bottom: 48px;
+
+    @media (max-width: 460px) {
+        border-bottom: none;
+    }
 }
 
 .tm-border-top {
@@ -247,11 +251,19 @@ h2 {
     right: -20px;
     bottom: -10px;
     left: auto;
+
+    @media (max-width: 460px) {
+            visibility: hidden;
+        }
 }
 
 .intro-circle-4 {
     left: -20px;
     bottom: -10px;
+
+    @media (max-width: 460px) {
+            visibility: hidden;
+        }
 }
 
 .tm-intro-btn {

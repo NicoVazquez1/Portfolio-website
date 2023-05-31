@@ -58,12 +58,16 @@
         <div class="page-width-1 page-left">
           <div class="d-flex position-relative tm-border-top intro-container tm-border-bottom">
             <div class="intro-left tm-bg-dark">
-            <h2>About Me</h2>
-            <p>Hi, I'm Nicolas Vazquez, a passionate .NET developer focused on creating efficient web applications. With experience
-              in QA Manual/Automation, I'm a curious, self-taught, calm, creative, and proactive individual. These qualities drive
-              my approach to learning, problem-solving, and personal growth. I actively seek opportunities, take ownership of tasks,
-              and contribute effectively to team collaborations. I'm also a multi-instrumentalist musician and composer with a
-              passion for music ♫. In my free time, I enjoy videogames, science, and the stoic philosophy.</p>
+              <h2>About Me</h2>
+              <p>Hi, I'm Nicolas Vazquez, a passionate .NET developer focused on creating efficient web applications.
+                With experience
+                in QA Manual/Automation, I'm a curious, self-taught, calm, creative, and proactive individual. These
+                qualities drive
+                my approach to learning, problem-solving, and personal growth. I actively seek opportunities, take
+                ownership of tasks,
+                and contribute effectively to team collaborations. I'm also a multi-instrumentalist musician and
+                composer with a
+                passion for music ♫. In my free time, I enjoy videogames, science, and the stoic philosophy.</p>
               <div>
                 <h2 class="mb-4">Technologies</h2>
                 <div>
@@ -78,21 +82,21 @@
                   <img src="img/logos/selenium.png" alt="" class="logos">
                 </div>
               </div>
-            </div>
-            <div class="tm-border-top tm-border-bottom">
+
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+
+              <div class="text-center">
+                <a href="#0" data-page-no="2" class="btn btn-primary tm-intro-btn tm-page-link">
+                  View projects
+                </a>
+              </div>
 
             </div>
-            <div class="circle intro-circle-1"></div>
-            <div class="circle intro-circle-2"></div>
-            <div class="circle intro-circle-3"></div>
-            <div class="circle intro-circle-4"></div>
+
           </div>
-          <div class="text-center">
-            <a href="#0" data-page-no="2" class="btn btn-primary tm-intro-btn tm-page-link">
-              View projects
-            </a>
-          </div>
-        </div>
       </li>
 
       <li data-page-no="2">
@@ -188,7 +192,8 @@
                   <p><strong>Responsabilities: </strong>Product design | Interface design | Database model design |
                     Backend | Buisness task | Formation of the other member</p>
                   <p><strong>State: </strong>Waiting for client requiriment</p>
-                  <p><strong>Description: </strong>This project aims to streamline the process of recording fruit weight, revenue generated, worker
+                  <p><strong>Description: </strong>This project aims to streamline the process of recording fruit
+                    weight, revenue generated, worker
                     payments, tray
                     quantity, client information, and delivery type in a blueberry field. I myself worked in such a
                     field a
@@ -202,21 +207,29 @@
 
             <article class="m-4">
               <div>
-                <p>Previously, the fruit collection process involved manual calculations and paper records. To improve efficiency, I
+                <p>Previously, the fruit collection process involved manual calculations and paper records. To improve
+                  efficiency, I
                   proposed creating an app that automates data recording and processing.</p>
-                <p>The field owner approved the idea, and I designed the app accordingly. I also created an entity-relationship
+                <p>The field owner approved the idea, and I designed the app accordingly. I also created an
+                  entity-relationship
                   diagram to visualize the data structure.</p>
                 <p>Next, I estimated the budget and created user stories to address the identified problems.</p>
-                <p>Using Entity Framework, I established the database connection and implemented security measures such as JWT.</p>
-                <p>The app follows an MVC architecture, with endpoints in the services folder and business logic handled by the
+                <p>Using Entity Framework, I established the database connection and implemented security measures such
+                  as JWT.</p>
+                <p>The app follows an MVC architecture, with endpoints in the services folder and business logic handled
+                  by the
                   NegocioService class.</p>
                 <p>I conducted tests using Postman, including creating a new truck and making fruit deliveries.</p>
-                <p>The system calculates the total kilograms delivered by subtracting the weight of trays from the total weight.
+                <p>The system calculates the total kilograms delivered by subtracting the weight of trays from the total
+                  weight.
                   Payments are calculated based on the payment per kilogram and assigned to workers.</p>
-                <p>All data is stored in the database, and the app allows for the proper management of the fruit load and truck
+                <p>All data is stored in the database, and the app allows for the proper management of the fruit load
+                  and truck
                   departures.</p>
-                <p>The project is currently running smoothly on the server, and additional assistance is being provided for frontend
-                  development. The project is still in progress due to financial considerations, and I am awaiting further
+                <p>The project is currently running smoothly on the server, and additional assistance is being provided
+                  for frontend
+                  development. The project is still in progress due to financial considerations, and I am awaiting
+                  further
                   requirements from the client.</p>
               </div>
             </article>
@@ -260,7 +273,8 @@
                       class="logos"></p>
                   <p><strong>Responsabilities: </strong>Arquitecture | Whole development</p>
                   <p><strong>State: </strong>Completed</p>
-                  <p><strong>Description: </strong>This is my Automation framework, written in <strong>C#</strong> and using <strong>Selenium</strong>
+                  <p><strong>Description: </strong>This is my Automation framework, written in <strong>C#</strong> and
+                    using <strong>Selenium</strong>
                     and
                     <strong>SpecFlow</strong>. It has hooks (which are processes that are executed every time a test
                     case,
@@ -274,21 +288,26 @@
 
               <article class="m-4">
                 <p>
-                  In the features folder of our project, we create Gherkin files that define the behavior of our tests. Using
+                  In the features folder of our project, we create Gherkin files that define the behavior of our tests.
+                  Using
                   SpecFlow, we can automatically generate the corresponding methods based on these files.
                 </p>
                 <br>
                 <p>
-                  Let's take a specific scenario as an example. We start by navigating to YouTube and entering the query "playing
-                  god". Once the program reaches the search results page, it clicks on the first video and verifies that the title
+                  Let's take a specific scenario as an example. We start by navigating to YouTube and entering the query
+                  "playing
+                  god". Once the program reaches the search results page, it clicks on the first video and verifies that
+                  the title
                   matches the expected value using an assert function.
                 </p>
                 <p>
-                  Additionally, the project includes an extended report feature that generates a <a href="testResult.html">Report</a> for each test case. 
+                  Additionally, the project includes an extended report feature that generates a <a
+                    href="testResult.html">Report</a> for each test case.
                 </p>
                 <p>
-                  You can find the project on my <a href="https://github.com/NicoVazquez1/FlowTest">GitHub</a> for more details and access to the code.
-                 </p>
+                  You can find the project on my <a href="https://github.com/NicoVazquez1/FlowTest">GitHub</a> for more
+                  details and access to the code.
+                </p>
                 </p>
               </article>
             </article>
@@ -303,30 +322,37 @@
                       <img src="img/porfolio/home.png" class="enlargeable">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-          
+
                 <div class="order-1 showcase__infos-wrapper card-bg-dark">
                   <h3>Portfolio Website</h3>
                   <h5>My own portfolio website to show my work</h5>
-                  <p><strong>Stack:</strong> <img src="img/logos/html.png" alt="" class="logos"> <img src="img/logos/css.png" alt=""
-                      class="logos"> <img src="img/logos/js.png" alt="" class="logos">
+                  <p><strong>Stack:</strong> <img src="img/logos/html.png" alt="" class="logos"> <img
+                      src="img/logos/css.png" alt="" class="logos"> <img src="img/logos/js.png" alt="" class="logos">
                   </p>
                   <p><strong>Responsibilities: </strong>Whole development</p>
                   <p><strong>State: </strong>Completed | Updating with new content</p>
-                  <p><strong>Description: </strong>For this website, I had the idea of making it a single page. As you can notice, there
-                    is no page refresh, and all the content is organized and presented using code. Therefore, this is not just a website
-                    but a single page application. It is worth mentioning that I started by using a template to develop this single page.
-                    The template provided me with the idea and general design, which is why I chose to build it with code instead of using
+                  <p><strong>Description: </strong>For this website, I had the idea of making it a single page. As you
+                    can notice, there
+                    is no page refresh, and all the content is organized and presented using code. Therefore, this is
+                    not just a website
+                    but a single page application. It is worth mentioning that I started by using a template to develop
+                    this single page.
+                    The template provided me with the idea and general design, which is why I chose to build it with
+                    code instead of using
                     WordPress.
-                    I also want to mention that for the translation to Spanish, I used artificial intelligence instead of an API due to
+                    I also want to mention that for the translation to Spanish, I used artificial intelligence instead
+                    of an API due to
                     budgetary reasons.
                   </p>
                   <p>GitHub<a href="https://github.com/NicoVazquez1/WebPersonal-v1"> Repository</a></p>
@@ -391,8 +417,8 @@
                 <p>The new version makes the gameplay more
                   fluent
                   and improve performance
-                 </p>
-                <p>This is what I have done so far in 2 days. 
+                </p>
+                <p>This is what I have done so far in 2 days.
                   can switch between three types of ammunition:</p>
                 <p><strong>Standard Bullet:</strong> a single bullet ideal for precision.</p>
                 <p><strong>Shotgun Shot:</strong> multiple bullets with dispersion, ideal for quickly hitting multiple
@@ -449,7 +475,8 @@
                       src="img/logos/unity.png" alt="" class="logos"></p>
                   <p><strong>Responsabilities: </strong>principal Minigame of the game</p>
                   <p><strong>State: </strong>Completed</p>
-                  <p><strong>Description</strong> Sector 7-G is a video game that emerged from a game jam with the theme of "the calm before the storm."
+                  <p><strong>Description</strong> Sector 7-G is a video game that emerged from a game jam with the theme
+                    of "the calm before the storm."
                     It
                     involves
                     taking on the role of a technician at a nuclear station and trying to prevent the reactor from
@@ -488,34 +515,39 @@
                       <img src="img/others/attica.png" class="enlargeable">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-            
+
                 <div class="order-1 showcase__infos-wrapper card-bg-dark">
-                <h4>Attica</h4>
-                <p><strong>Stack:</strong> <img src="img/logos/cs.png" alt="" class="logos"> <img src="img/logos/angular.png" alt=""
-                    class="logos"> <img src="img/logos/mysql.png" alt="" class="logos">
-                </p>
-                <p><strong>Responsibilities: </strong>Whole development</p>
-                <p><strong>State: </strong>Inactive</p>
-                <p><strong>Description: </strong>Attica is a web project made in .NET and Angular. It was intended to be a platform for users to
-                  present
-                  their
-                  projects and vote for their favorite ones. I completed the database model, the CRUD functions on the
-                  API, and some of
-                  the basic functions on the front-end. Here is a picture illustrating how you would add members to your
-                  organization:
-                </p>
-                <p>GitHub<a href="https://github.com/NicoVazquez1/Attica-front"> Repository (Front)</a></p>
-                <p>GitHub<a href="https://github.com/NicoVazquez1/Attica-Back"> Repository (Back)</a></p>
-              </div>
+                  <h4>Attica</h4>
+                  <p><strong>Stack:</strong> <img src="img/logos/cs.png" alt="" class="logos"> <img
+                      src="img/logos/angular.png" alt="" class="logos"> <img src="img/logos/mysql.png" alt=""
+                      class="logos">
+                  </p>
+                  <p><strong>Responsibilities: </strong>Whole development</p>
+                  <p><strong>State: </strong>Inactive</p>
+                  <p><strong>Description: </strong>Attica is a web project made in .NET and Angular. It was intended to
+                    be a platform for users to
+                    present
+                    their
+                    projects and vote for their favorite ones. I completed the database model, the CRUD functions on the
+                    API, and some of
+                    the basic functions on the front-end. Here is a picture illustrating how you would add members to
+                    your
+                    organization:
+                  </p>
+                  <p>GitHub<a href="https://github.com/NicoVazquez1/Attica-front"> Repository (Front)</a></p>
+                  <p>GitHub<a href="https://github.com/NicoVazquez1/Attica-Back"> Repository (Back)</a></p>
+                </div>
             </article>
           </section>
 
@@ -528,22 +560,25 @@
                     <img src="img/others/acuarium.png" class="enlargeable">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4"
+                  data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4"
+                  data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
               <div class="order-1 showcase__infos-wrapper card-bg-dark">
                 <h4>Acuarium</h4>
-                <p><strong>Stack:</strong> <img src="img/logos/cs.png" alt="" class="logos"> <img src="img/logos/unity.png" alt=""
-                    class="logos"></p>
+                <p><strong>Stack:</strong> <img src="img/logos/cs.png" alt="" class="logos"> <img
+                    src="img/logos/unity.png" alt="" class="logos"></p>
                 <p><strong>Responsibilities: </strong>Whole development</p>
                 <p><strong>State: </strong>Inactive</p>
-                <p><strong>Description: </strong> Acuarium is a Unity project in which I incorporated one of my songs. The project involves a series of
+                <p><strong>Description: </strong> Acuarium is a Unity project in which I incorporated one of my songs.
+                  The project involves a series of
                   3D objects that
                   appear in synchronization with the frequencies of the music. Meanwhile, the player is positioned in
                   the
@@ -563,23 +598,27 @@
                     <img src="img/others/PubliEdicto.png" class="enlargeable">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4"
+                  data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4"
+                  data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
               <div class="order-1 showcase__infos-wrapper card-bg-dark">
                 <h4>PubliEdicto</h4>
-                <p><strong>Stack:</strong> <img src="img/logos/java.png" alt="" class="logos"> <img src="img/logos/spring.png" alt=""
-                    class="logos"> <img src="img/logos/mysql.png" alt="" class="logos">
+                <p><strong>Stack:</strong> <img src="img/logos/java.png" alt="" class="logos"> <img
+                    src="img/logos/spring.png" alt="" class="logos"> <img src="img/logos/mysql.png" alt=""
+                    class="logos">
                 </p>
                 <p><strong>Responsabilities: </strong>Backend | Security </p>
                 <p><strong>State: </strong>Abandonded</p>
-                <p><strong>Description: </strong>PubliEdicto was the final project of the Egg FullStack course. The project aimed to allow users to
+                <p><strong>Description: </strong>PubliEdicto was the final project of the Egg FullStack course. The
+                  project aimed to allow users to
                   upload and publish
                   edicts on the web, which could then be quoted by others. However, due to issues with teamwork, the
                   project was only
@@ -600,22 +639,26 @@
                     <img src="img/others/gasista.png" class="enlargeable">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4"
+                  data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4"
+                  data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
               <div class="order-1 showcase__infos-wrapper card-bg-dark">
                 <h4>gasistavazquez.online</h4>
-                <p><strong>Stack:</strong> <img src="img/logos/html.png" class="logos"><img src="img/logos/css.png" class="logos"><img
-                    src="img/logos/js.png" class="logos"><img src="img/logos/bootstrap.png" class="logos"></p>
+                <p><strong>Stack:</strong> <img src="img/logos/html.png" class="logos"><img src="img/logos/css.png"
+                    class="logos"><img src="img/logos/js.png" class="logos"><img src="img/logos/bootstrap.png"
+                    class="logos"></p>
                 <p><strong>Responsabilities: </strong>Whole development | SEO</p>
                 <p><strong>State: </strong>Abandonded</p>
-                <p><strong>Description: </strong>This was a landing page created to promote gas engineer services. Through my SEO work, it managed to
+                <p><strong>Description: </strong>This was a landing page created to promote gas engineer services.
+                  Through my SEO work, it managed to
                   reach the top
                   position for Mendoza center. However, over time, the project did not yield satisfactory results in
                   terms
@@ -681,9 +724,11 @@
             </div>
             <div class="col-md-6 p-4 tm-contact-right tm-bg-dark">
               <p class="mb-4">
-              I am excited to collaborate on new projects, connect with other developers, and exchange ideas. Feel free to explore my
-              portfolio, check out my blog, and reach out to me through the contact form. I look forward to bringing your development
-              ideas to life in the future.
+                I am excited to collaborate on new projects, connect with other developers, and exchange ideas. Feel
+                free to explore my
+                portfolio, check out my blog, and reach out to me through the contact form. I look forward to bringing
+                your development
+                ideas to life in the future.
               </p>
               <div>
                 Email: <a href="nicolasvazquezzzz@gmail.com" class="tm-link-white">nicolasvazquezzzz@gmail.com</a>
@@ -749,4 +794,5 @@
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
 </body>
+
 </html>

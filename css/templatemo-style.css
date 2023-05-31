@@ -511,7 +511,7 @@ figure.effect-julia:hover p {
 @media (max-width: 1200px) {
 
     img {
-        max-width: 1220px;
+        max-width: 1120px;
     }
 
     .navbar .navbar-nav .nav-item .nav-link {
@@ -571,26 +571,26 @@ figure.effect-julia:hover p {
     position: relative;
     width: 70%;
     float: left;
-
-    @media (max-width: 767px) {
-        width: 100%;
-    }
-    
 }
+
 
 .showcase__infos-wrapper {
     position: relative;
     float: left;
     width: 30%;
     font-size: 16px;
-
-    @media (max-width: 767px) {
-        width: 100%;
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 767px) {
+
+    .showcase__slider {
+        width: 100%;
+    }
+
+    .showcase__infos-wrapper{
+        width: 100%;
+        font-size: 18px;
+    }
 
     .tm-contact-left {
         padding-right: 15px;
@@ -796,8 +796,4 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 .slider li {
   width: 100%;
   height: 100%;
-}
-
-.translateButton{
-
 }

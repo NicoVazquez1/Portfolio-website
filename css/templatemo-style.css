@@ -749,6 +749,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 
 .carousel-inner .enlargeable {
     cursor: pointer;
+    object-fit: scale-down;
 }
 
 .carousel-inner .enlarged {
@@ -761,7 +762,6 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 .slider {
   position: relative;

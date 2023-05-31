@@ -723,6 +723,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
     position: fixed;
     bottom: 0;
     width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.6)*/
 }
 
 .project-section{

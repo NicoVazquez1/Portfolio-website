@@ -166,6 +166,86 @@ $(document).ready(function() {
   });
 });
 
+/*
+let currentLanguage = 'en';
+
+function translateToSpanish() {
+  const elementsToTranslate = $('p, h1');
+  
+  elementsToTranslate.each(async function() {
+    const originalText = $(this).text();
+    const translatedText = await translateText(originalText, currentLanguage, 'es');
+    $(this).text(translatedText);
+  });
+
+  currentLanguage = 'es';
+}
+
+function translateToEnglish() {
+  const elementsToTranslate = $('p, h1');
+  
+  elementsToTranslate.each(async function() {
+    const originalText = $(this).text();
+    const translatedText = await translateText(originalText, currentLanguage, 'en');
+    $(this).text(translatedText);
+  });
+
+  // Toggle the current language
+  currentLanguage = 'en';
+}
+
+async function translateText(text, sourceLanguage, targetLanguage) {
+  const apiKey = 'YOUR_GOOGLE_TRANSLATE_API_KEY'; // Replace with your Google Translate API key
+  const apiUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        q: text,
+        source: sourceLanguage,
+        target: targetLanguage,
+        format: 'text',
+      }),
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      return data.data.translations[0].translatedText;
+    } else {
+      throw new Error('Translation request failed');
+    }
+  } catch (error) {
+    alert('An error occurred during translation. Please try again.');
+    console.error(error);
+    throw error;
+  }
+}
+
+
+$(document).ready(function() {
+  $('#translateButton').click(function() {
+    if (currentLanguage === 'en') {
+      translateToSpanish();
+    } else {
+      translateToEnglish();
+    }
+  });
+});
+*/
+
+function countCharactersInWebsite() {
+  var websiteContent = document.body.innerText;
+  var cleanContent = websiteContent.replace(/\s/g, '');
+  var characterCount = cleanContent.length;
+  console.log('Total number of characters in the website: ' + characterCount);
+}
+
+countCharactersInWebsite();
+
 
 
 
